@@ -1,0 +1,69 @@
+:root {
+  --row-spacing: 10px;
+}
+
+.chart-title {
+  text-align: left;
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.chart {
+  max-width: 600px;
+  margin: 0 auto;
+  flex: 1;
+}
+
+.chart-rows {
+  display: flex;
+  column-gap: 20px;
+  margin-bottom: 10px;
+}
+
+.chart-labels {
+  min-height: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--row-spacing);
+}
+
+.chart-label {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  white-space: nowrap;
+}
+
+.chart-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--row-spacing);
+}
+
+.chart-progress {
+  flex: 1 0 30px;
+  width: 100%;
+  height: 30px;
+  background-color: #eee;
+  position: relative;
+}
+
+.chart-progress-value {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: lightblue;
+  width: 20%;
+  height: 100%;
+}
+
+button {
+  text-align: center;
+}
